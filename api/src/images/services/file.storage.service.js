@@ -16,7 +16,7 @@ class fileStorageService {
     });
     const upload = this.multer({
       storage: storage
-    }).single('image');
+    }).single('file');
     return upload
   }
 }

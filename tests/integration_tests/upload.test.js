@@ -33,7 +33,7 @@ describe('/POST images', () => {
     chai.request('http://api:8080')
     .post('/api/images')
     .field('description', 'A nice image')
-    .attach('image', '/usr/src/app/test_images/test_image.webp')
+    .attach('file', '/usr/src/app/test_images/test_image.webp')
     .end((err, res) => {
       res.should.have.status(400);
       res.body.should.be.a('object');
