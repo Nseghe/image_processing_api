@@ -16,14 +16,14 @@ class imagesController {
         console.log('RDS error');
         this.imagesModel.deleteImage(data).then(() => {
           console.log(`Deleted image ${data.Key} from s3 bucket`);
-          return res.status(500).send({error: error + "\n" + error.stack});
+          return res.status(500).send({error: `Unable to upload image details to RDS. Deleted image ${data.key} from S3 bucket. Please try again.`});
         }).catch((err) => {
-          return res.status(500).send({err: err + "\n" + err.stack});
+          return res.status(500).send({error: `Unable to delete image ${data.key} from S3 bucket. Image ${data.key} should be deleted manually.`});
         })
       })
     }).catch((err) => {
       console.log('S3 error');
-      return res.status(500).send({error: err + "\n" + err.stack});
+      return res.status(500).send({error: 'Unable to upload image to S3 bucket.\nPlease try again.'});
     })
   }
 

@@ -56,7 +56,7 @@ describe('/POST images', () => {
   });
 
   it('responds with 201 {api/images} - Successful upload', function(done) {
-    this.timeout(60000);
+    this.timeout(100000);
     chai.request('http://api:8080')
     .post('/api/images')
     .field('description', 'A nice image')
