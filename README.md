@@ -15,7 +15,7 @@ This api is written in node.js and is designed to handle image uploads. Uploaded
 
   - An [AWS account](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc) (free tier is sufficient). You'll need to get your AWS credentials as explained [here](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/getting-your-credentials.html). You'll also need to set up an [AWS S3 bucket](https://aws.amazon.com/s3/) and an [AWS RDS MySql Database](https://aws.amazon.com/rds/mysql/). Since this is a hobby project, allow public access for both your S3 bucket and AWS RDS database so the api can communicate with them.
 
-- Next, update the project credentials and configuration as described below:
+- Next, update the project credentials and configurations as described below:
   
   - Update the credential file in the project directory (at ```/api/.aws/credentials```) with your AWS credentials (aws_access_key_id and aws_secret_access_key).
 
@@ -25,7 +25,9 @@ This api is written in node.js and is designed to handle image uploads. Uploaded
 ## Usage
 
 To run the project, please follow the steps below on a command line:
+
  - Clone the project repository by running the following command:
     - ```git clone https://github.com/Nseghe/image_processing_api```.
+
  - Navigate into the cloned project directory and run the following command:
     - ```docker-compose build && docker-compose up```.
