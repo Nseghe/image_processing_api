@@ -46,7 +46,7 @@ describe('/POST images', () => {
     chai.request('http://api:8080')
     .post('/api/images')
     .field('description', 'A nice image')
-    .attach('image', '/usr/src/app/test_images/test_image.jpg')
+    .attach('file', '/usr/src/app/test_images/test_image.jpg')
     .end((err, res) => {
       res.should.have.status(400);
       res.body.should.be.a('object');
@@ -60,7 +60,7 @@ describe('/POST images', () => {
     chai.request('http://api:8080')
     .post('/api/images')
     .field('description', 'A nice image')
-    .attach('image', '/usr/src/app/test_images/test_image.png')
+    .attach('file', '/usr/src/app/test_images/test_image.png')
     .end((err, res) => {
       res.should.have.status(201);
       res.body.should.be.a('object');
