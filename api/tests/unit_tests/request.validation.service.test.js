@@ -26,7 +26,6 @@ describe('RequestValidationService', function() {
         fileProcessingService
       })
       const nextSpy = sinon.spy();
-      // const statusSpy = sinon.spy(res, 'status');
       const result = requestValidationService.checkFileExists(req, res, nextSpy);
       expect(statusSpy.calledWith(400)).to.equal(true);
       expect(result).to.have.property('error');
@@ -63,8 +62,6 @@ describe('RequestValidationService', function() {
         fileProcessingService
       })
       const nextSpy = sinon.spy();
-      // const statusSpy = sinon.spy(res, 'status');
-      console.log('\n\nres:', res);
       const result = requestValidationService.checkDescriptionExists(req, res, nextSpy);
       expect(statusSpy.calledWith(400)).to.equal(true);
       expect(result).to.have.property('error');
@@ -104,7 +101,6 @@ describe('RequestValidationService', function() {
         fileProcessingService
       });
       const nextSpy = sinon.spy();
-      // const statusSpy = sinon.spy(res, 'status');
       const result = requestValidationService.checkFileType(req, res, nextSpy);
       expect(statusSpy.calledWith(400)).to.equal(true);
       expect(result).to.have.property('error');
@@ -128,7 +124,6 @@ describe('RequestValidationService', function() {
         fileProcessingService
       });
       const nextSpy = sinon.spy();
-      // const statusSpy = sinon.spy(res, 'status');
       const result = requestValidationService.checkFileType(req, res, nextSpy);
       expect(statusSpy.calledWith(400)).to.equal(true);
       expect(result).to.have.property('error');
@@ -170,7 +165,6 @@ describe('RequestValidationService', function() {
           }}
       }}
       const nextSpy = sinon.spy();
-      // const statusSpy = sinon.spy(res, 'status');
       const result = requestValidationService.checkFileSize(req, res, nextSpy);
       expect(statusSpy.calledWith(400)).to.equal(true);
       expect(result).to.have.property('error');
