@@ -1,4 +1,4 @@
-/api/.aws/
+.aws
 .idea
 **/node_modules
 yarn.lock
