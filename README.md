@@ -15,6 +15,6 @@ This api is written in node.js and is designed to handle image uploads. Uploaded
 ## Usage
 
 To run the project, please follow the steps below on a command line:
- - Clone the project repository by running ```git clone https://github.com/Nseghe/Image_Processing_Api```.
- - Navigate into the cloned project directory and run the following command: 
- ```docker-compose build && docker-compose up```.
+ - Clone the project repository by running ```git clone https://github.com/Nseghe/image_processing_api```.
+ - Navigate into the cloned project directory and run the following command:
+    - ```docker-compose build && docker-compose up```.
