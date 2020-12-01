@@ -1,0 +1,21 @@
+version: '2'
+services:
+  api:
+    image: api
+    build: ./api
+    networks:
+      - backend
+    ports:
+      - "8080:8080"
+
+  tests:
+    image: tests
+    depends_on:
+      - api
+    build: ./tests
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge

@@ -1,0 +1,26 @@
+{
+  "name": "crossover-project-nseghe-essiet-tests",
+  "version": "1.0.0",
+  "description": "Tests for Image Upload API for Crossover Software Architect Application Assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha \"integration_tests/**/*.test.js\" --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nseghe/Image_Processing_Api"
+  },
+  "author": "Nseghe Essiet",
+  "license": "GPL-1.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Nseghe/Image_Processing_Api/issues"
+  },
+  "homepage": "https://github.com/Nseghe/Image_Processing_Api#readme",
+  "dependencies": {
+    "axios": "0.21.0",
+    "chai": "^4.2.0",
+    "chai-http": "4.3.0",
+    "mocha": "^8.2.1",
+    "nyc": "15.1.0"
+  }
+}
