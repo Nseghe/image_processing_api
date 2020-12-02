@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha './tests/**/*.test.js'",
+    "coverage": "nyc --reporter lcov --reporter text --report-dir .nyc_coverage report",
     "start": "node src/index.js"
   },
   "repository": {
